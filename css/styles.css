@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #f8edeb;
+    font-family: 'Albert Sans', sans-serif;
+}
+#marca{
+    font-family: "Albert Sans";
+    font-size: 25px;
+}
+.menu-items{
+    padding-left: 120px;
+}
+.menu-items li{
+    padding-right: 50px;
+}
+.menu-items li a{
+    font-size: 18px;
+}
+.txt-buscar{
+    width: 150px;
+}
