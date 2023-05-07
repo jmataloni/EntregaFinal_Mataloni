@@ -29,16 +29,16 @@
 
     <!-- LINK DE CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-        
+
     <title>Contacto</title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row"><!-- header -->
+        <header class="row"><!-- header -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary header">
                 <div class="container">
-                    <a class="navbar-brand" id="marca" href="index.html">KINTSUGI</a>
+                    <a class="navbar-brand" id="marca" href="../index.html">KINTSUGI</a>
                     <!-- <img src="/images/cremas.ico" alt="logo"><a href="index.html"></a></img> -->
                     <button class="navbar-toggler button_menu" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -55,25 +55,25 @@
                             <li class="nav-item"><a class="nav-link" href="./novedades.html">Novedades</a></li>
                             <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                         </ul>
-
                     </div>
+
                     <div class="col"></div>
                 </div>
             </nav>
-        </div>
-        <!-- FIN HEADER -->
+        </header><!-- FIN HEADER -->
 
         <!-- MAIN -->
-        <div class="container">
+        <main class="container">
             <div class="row contacto">
                 <!-- FORM DE CONTACTO -->
                 <div class="col form">
-                    <div class="form_titulo"><h4>CONTACTANOS</h4></div>
+                    <div class="form_titulo">
+                        <h4>CONTACTANOS</h4>
+                    </div>
                     <div class="form_content"> <!-- form -->
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Nombre">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Email</label>
@@ -90,36 +90,41 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
 
-                        <div class="btn-content"><button type="submit" class="form_btn">Enviar</button></div>
-                        
+                        <div class="btn-content"><button type="submit" class="boton btn-form"><span>Enviar</span></button></div>
+
                     </div> <!-- FIN DE CONTAC -->
                 </div><!-- FIN DEL FORM DE CONTACTO -->
                 <!-- DIRECCION DE MAPS -->
-                <div class="col dir">
-                    <div class="dir_titulo"><h5>Bv. Illia 5000</h5></div>
-                    <div class="dir_mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5837.3920549634495!2d-64.18507956157974!3d-31.421188453920326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28502e670e5%3A0xe773c3fa1b318d82!2sIllia%2029!5e0!3m2!1ses!2sar!4v1682124857751!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <section class="col dir">
+                    <div class="dir_titulo">
+                        <h5>Bv. Illia 5000</h5>
                     </div>
-                </div> <!-- FIN DE DIRECCION DE MAPS -->
+                    <div class="dir_mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5837.3920549634495!2d-64.18507956157974!3d-31.421188453920326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28502e670e5%3A0xe773c3fa1b318d82!2sIllia%2029!5e0!3m2!1ses!2sar!4v1682124857751!5m2!1ses!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section> <!-- FIN DE DIRECCION DE MAPS -->
             </div>
-        </div>
+        </main>
 
         <!-- FIN DEL MAIN -->
 
         <!-- FOOTER --><!-- 
     <div class="container-fluid"> -->
-        <div class="row footer" id = "footer">
+        <footer class="row footer footer-bottom">
             <div class="col">
                 <div class="container">
                     <div class="row">
                         <!-- REDES -->
                         <div class="col redes">
                             <h5>Kintsugi</h5>
-                            <ul class="redes_items">
+                            <ul class="redes-items">
                                 <li><a title="Instagram" href="https://www.instagram.com"><img
                                             src="../images/instagram.ico" alt="Instagram" /></a></li>
-                                <li><a title="Facebook" href="https://www.facebook.com"><img
-                                            src="../images/facebook.ico" alt="Facebook" /></a></li>
+                                <li><a title="Facebook" href="https://www.facebook.com"><img src="../images/facebook.ico"
+                                            alt="Facebook" /></a></li>
                                 <li><a title="Twitter" href="https://www.twitter.com"><img
                                             src="../images/twitter_icon-icons.com_66093.ico" alt="Twitter" /></a>
                                 </li>
@@ -134,13 +139,14 @@
                         </div>
                         <!-- NEWSLETTER -->
                         <div class="col newsletter">
-                            <button class="button_news"><span>Newsletter</span></button>
+                            <button class="boton"><span>Newsletter</span></button>
                         </div>
 
                     </div>
                 </div>
             </div>
-        </div> <!-- fin fila-footer -->
+        </footer> <!-- FIN FOOTER -->
+
 
     </div>
 </body>

@@ -1,0 +1,63 @@
+@use "variables";
+
+//MAIN DEL FORM CONTACTO
+.container{
+    .contacto{
+        margin-top: 40px;
+        //FORM DE CONTACTO
+        .form{
+            .form_titulo{
+                text-align: center;
+                h4{
+                    font-family: $font-titles;
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+            }
+            .form_content{
+                margin-right: 100px;
+                margin-left: 100px;
+                label{
+                    font-size: 14px;
+                }
+            }
+            .btn-form{
+                @extend .boton;
+            }
+            .btn-content{
+                text-align:center; 
+            }
+        }
+        .dir{
+            text-align: center;
+            @include media(sm){
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            @include media(md){
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            .dir_titulo{
+                h5{
+                    font-size: 30px;
+                    font-family: $font-maps;
+                    margin-bottom: 19px;
+                    @include media(sm){
+                        font-size: 20px ;
+                    }
+                }
+            }
+            .dir_mapa{
+                iframe{
+                    width: 500px;
+                    height: 300px;
+                    @include media(sm){
+                        height: 200px;
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
