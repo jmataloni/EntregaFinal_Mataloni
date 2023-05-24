@@ -2,24 +2,24 @@
   text-align: center;
   margin-top: 15px;
 }
-.main .main_elem img {
+.main .main_elem video {
   width: 1160px;
   height: 450px;
 }
-@media (max-width: 500px) {
-  .main .main_elem img {
+@media (min-width: 480px) and (max-width: 768px) {
+  .main .main_elem video {
     width: 300px;
     height: 200px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .main .main_elem img {
+  .main .main_elem video {
     width: 500px;
     height: 500px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
-  .main .main_elem img {
+  .main .main_elem video {
     width: 900px;
     height: 350px;
   }
@@ -31,7 +31,7 @@
   margin-right: 100px;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .info {
     margin-right: 60px;
     margin-left: 60px;
@@ -44,7 +44,7 @@
   font-family: "Aboreto", sans-serif;
   font-size: 30px;
 }
-@media (max-width: 500px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .info .info_letra h4 {
     font-size: 14px;
   }
@@ -53,7 +53,7 @@
   width: 500px;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .info .info_letra .espacio_p {
     width: 250px;
     margin: 0 auto;
@@ -65,7 +65,7 @@
   font-size: 17px;
   margin-top: 10px;
 }
-@media (max-width: 500px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .info .info_letra .espacio_p p {
     font-size: 10px;
   }
@@ -73,18 +73,18 @@
 .info .info_letra .espacio_p .text-justify {
   text-align: justify;
 }
-@media (max-width: 500px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .info .info_letra .espacio_p .acomodar-margin {
     margin-right: 0;
     margin-left: 0;
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .info .info_letra .espacio_p .carousel {
     /* width: 55%; */
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .info .info_letra .espacio_p .carousel .carousel-inner {
     width: 100%;
     margin-left: 10%;
@@ -110,13 +110,21 @@
 .container .contacto .form .form_content label {
   font-size: 14px;
 }
+.container .contacto .form .btn {
+  background-color: #001d3d;
+  width: 40%;
+  height: 30px;
+  color: white;
+  font-size: 15px;
+  font-family: "Albert Sans", sans-serif;
+}
 .container .contacto .form .btn-content {
   text-align: center;
 }
 .container .contacto .dir {
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .container .contacto .dir {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -133,7 +141,7 @@
   font-family: "Abril Fatface", sans-serif;
   margin-bottom: 19px;
 }
-@media (max-width: 500px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .container .contacto .dir .dir_titulo h5 {
     font-size: 20px;
   }
@@ -142,11 +150,117 @@
   width: 500px;
   height: 300px;
 }
-@media (max-width: 500px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .container .contacto .dir .dir_mapa iframe {
     height: 200px;
     width: 250px;
   }
+}
+
+.container .tit_prod {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.container .tit_prod h2 {
+  font-family: "Aboreto", sans-serif;
+  font-size: 30px;
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .container .tit_prod h2 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .container .productos .prod {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container .productos .prod {
+    display: flex;
+    justify-content: center;
+  }
+}
+.container .productos .card {
+  width: 30rem;
+  height: 45rem;
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .container .productos .card {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container .productos .card {
+    margin-bottom: 20px;
+  }
+}
+.container .productos .card img {
+  height: 50%;
+}
+.container .productos .card .card-body {
+  text-align: center;
+}
+.container .productos .card .card-body .card-title {
+  font-family: "Aboreto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.container .productos .card .card-body .card-text {
+  height: 60%;
+  text-align: left;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 14px;
+}
+.container .productos .card .card-body .btn {
+  background-color: #001d3d;
+}
+.container .productos .card .card-body a:hover {
+  background-color: #006992;
+}
+.container .productos .card .card-body .btn_prod {
+  font-size: 14px;
+  font-family: "Albert Sans", sans-serif;
+  width: 120px;
+}
+
+.container .novedades {
+  text-align: center;
+}
+.container .novedades .card {
+  width: 50rem;
+  height: 50rem;
+}
+.container .novedades .card img {
+  height: 80%;
+}
+.container .novedades .card .card-title {
+  font-family: "Aboreto", sans-serif;
+  font-size: 25px;
+}
+.container .novedades .card .card-text {
+  text-align: left;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 14px;
+}
+.container .novedades .card .btn {
+  background-color: #001d3d;
+}
+.container .novedades .card a:hover {
+  background-color: #006992;
+}
+.container .novedades .card .btn_prod {
+  font-size: 14px;
+  font-family: "Albert Sans", sans-serif;
+  width: 120px;
+}
+.container .novedades iframe {
+  width: 100%;
+  height: 100%;
 }
 
 * {
@@ -203,7 +317,7 @@ body {
   font-size: 18px;
   color: #eff6e0;
 }
-@media (max-width: 500px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .menu .menu-items li a {
     font-size: 15px;
   }
@@ -216,6 +330,27 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .footer-bottom {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-bottom {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .footer-bottom {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 .footer {
@@ -258,7 +393,7 @@ body {
   text-align: center;
 }
 
-.boton, .container .contacto .form .btn-form {
+.boton {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -274,25 +409,25 @@ body {
   background-color: #001d3d;
   overflow: hidden;
 }
-@media (max-width: 500px) {
-  .boton, .container .contacto .form .btn-form {
+@media (min-width: 480px) and (max-width: 768px) {
+  .boton {
     font-size: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .boton, .container .contacto .form .btn-form {
+  .boton {
     font-size: 13px;
   }
 }
-.boton span, .container .contacto .form .btn-form span {
+.boton span {
   position: relative;
   z-index: 2;
   transition: 0.3s ease all;
 }
-.boton:hover::after, .container .contacto .form .btn-form:hover::after {
+.boton:hover::after {
   left: 0;
 }
-.boton::after, .container .contacto .form .btn-form::after {
+.boton::after {
   content: "";
   width: 200px;
   height: 30px;
@@ -304,9 +439,14 @@ body {
   border-right: 30px solid transparent;
   transition: 0.4s ease-in-out all;
 }
-@media (max-width: 500px) {
-  .boton::after, .container .contacto .form .btn-form::after {
+@media (min-width: 480px) and (max-width: 768px) {
+  .boton::after {
     width: 210px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .boton::after {
+    width: 149px;
   }
 }
 

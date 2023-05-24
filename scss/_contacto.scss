@@ -21,8 +21,14 @@
                     font-size: 14px;
                 }
             }
-            .btn-form{
-                @extend .boton;
+            
+            .btn {
+                background-color: #001d3d;
+                width: 40%;
+                height: 30px;
+                color: white; 
+                font-size: 15px;
+                font-family: $font-gral;
             }
             .btn-content{
                 text-align:center; 

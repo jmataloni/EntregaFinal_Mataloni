@@ -5,8 +5,8 @@
     .main_elem {
         text-align: center;
         margin-top: 15px;
-
-        img {
+        
+        video {
             width: 1160px;
             height: 450px;
             @include media(sm) {

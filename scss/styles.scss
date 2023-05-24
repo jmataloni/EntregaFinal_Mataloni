@@ -2,8 +2,10 @@
 @import "variables";
 @import "index";
 @import "contacto";
+@import "servicios"; 
+@import "productos"; 
+@import "novedades"; 
 @import "media";
-
 //GENERALES
 * {
     margin: 0;
@@ -74,7 +76,23 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+    @include media(sm){
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    @include media(md){
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    @include media(lg){
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
 }
+
 .footer {
     background-color: $footer-back-color;
     padding-top: 20px;
@@ -170,6 +188,9 @@ body {
         transition: .4s ease-in-out all;
         @include media(sm){
             width: 210px;
+        }
+        @include media(lg){
+            width: 149px;
         }
     }
 }
